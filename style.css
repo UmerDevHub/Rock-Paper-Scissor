@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    background: linear-gradient(90deg, #ff6f61, #de6262);
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 3rem;
+    align-items: center;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.choice:hover {
+    background: linear-gradient(135deg, #56ab2f, #a8e063);
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    gap: 8rem;
+    animation: fadeInUp 1.5s ease-in-out;
+    color: #ff6f61;
+}
+
+#user-score, #comp-score {
+    font-size: 4rem;
+    color: #ff6f61;
+    animation: bounce 2s infinite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.msg-container {
+    margin-top: 3rem;
+    animation: slideIn 1s ease-in-out;
+}
+
+#msg {
+    background: linear-gradient(90deg, #36d1dc, #5b86e5);
+    margin-top: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4rem;
+    animation: pulse 2s infinite;
+}
+
+#resetbtn {
+    background: linear-gradient(90deg, #36d1dc, #5b86e5);
+    color: white;
+    font-size: 0.9rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4rem;
+    border: none;
+    margin-top: 3rem;
+    transition: 0.3s all ease-in-out;
+}
+
+#resetbtn:hover {
+    background: linear-gradient(90deg, #5b86e5, #36d1dc);
+    border: 1px solid black;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-100%); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+/* *{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+h1{
+    background-color: #081b31;
+    color:white;
+    height: 5rem;
+    
+    line-height: 5rem;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 3rem;
+    align-items: center;
+}
+
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choice:hover{
+    background-color:#081b31 ;
+    cursor: pointer;
+}
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+
+
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem ;
+    margin-top: 2rem;
+    gap: 8rem;
+}
+#user-score,#comp-score{
+    font-size: 4rem;
+
+}
+.msg-container{
+    margin-top: 3rem;
+}
+
+#msg{
+    
+    background-color: #081b31;
+    margin-top: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    display: inline;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4rem;
+}
+#resetbtn{
+    background-color: forestgreen;
+    color: white;
+    font-size: 0.9rem;
+    display: inline;
+    padding: 0.5rem 1rem;
+    border-radius: 4rem;
+    border: none;
+    margin-top: 3rem;
+    transition: 0.3s all ease-in-out;
+}
+#resetbtn:hover{
+    background-color: white;
+    border: 1px solid black;
+    color:black;
+    transform: scale(1.01);
+} */
